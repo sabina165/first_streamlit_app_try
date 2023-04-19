@@ -23,4 +23,9 @@ streamlit.dataframe(fruits_to_show)
 import requests
 streamlit.header("Fruityvice Fruit Advice!")
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.text(fruityvice_response.json())
+# streamlit.text(fruityvice_response.json())
+
+# normalize the data into flat and categorize 
+fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+# make the data into dataframe
+streamlit.dataframe(fruityvice_normalized)
