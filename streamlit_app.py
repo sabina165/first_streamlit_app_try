@@ -79,6 +79,7 @@ def insert_row_snowflake(new_fruit):
     
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?')
+streamlit.write('Thanks for adding ', add_my_fruit )
 
 streamlit.header("The fruit load list contains:")
 if streamlit.button('Get Fruit Load List'):
