@@ -4,7 +4,7 @@ import requests
 import snowflake.connector
 from urllib.error import URLError #library for control flow of change
 # streamlit.stop to make the change made here doesn't influence the control flow in snowflakes
-streamlit.stop
+streamlit.stop()
 streamlit.title('My Parents New Healthy Diner')
 
 streamlit.header('🥣 Breakfast Menu')
