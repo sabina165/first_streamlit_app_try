@@ -70,7 +70,7 @@ streamlit.dataframe(my_data_row)
 # streamlit.write('Thanks for adding ', add_my_fruit )
 
 # my_cur.execute("insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values ('from streamlit')")
-import streamlit as st
+# import streamlit as st
 
 def insert_row_snowflake(new_fruit):
     with my_cnx.cursor() as my_cur:
